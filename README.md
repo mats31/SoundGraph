@@ -1,5 +1,5 @@
 # SoundGraph
-A WebGL experiment based on Three.js and Web Audio Api. The Box geometries are scaling in relation to the music's beat.
+A WebGL experiment based on Three.js and Web Audio Api. The Boxes Geometries are scaling in relation to the music's beat.
 
 Demo available [here](http://62.210.36.104/webgl/soundgraph/).
 
