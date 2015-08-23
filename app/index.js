@@ -15,7 +15,7 @@ domready(() => {
   webgl = new Webgl(window.innerWidth, window.innerHeight);
   document.getElementById('webgl').appendChild(webgl.renderer.domElement);
 
-  // Stats Settings
+  // stats Settings
   stats = new Stats();
   stats.setMode( 0 ); // 0: fps, 1: ms, 2: mb
   // align top-left
@@ -27,9 +27,12 @@ domready(() => {
   // GUI settings
   gui = new dat.GUI();
   gui.add(webgl, 'usePostprocessing');
+  gui.add(webgl, 'enableMusic');
 
   // handle resize
   window.onresize = resizeHandler;
+
+  // handle mousemove
   document.addEventListener( 'mousemove', mousemoveHandler, false );
 
   // let's play !
